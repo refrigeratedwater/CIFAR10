@@ -40,7 +40,7 @@ def roc_plot(y_test, y_prob, class_names):
     plt.figure(figsize=(8, 5))
     for i, color in zip(range(n_classes), colors):
         plt.plot(fpr[i], tpr[i], color=color, lw=2,
-                 label=f'ROC curve of class {class_names[i]} (area = {roc_auc[i]:.2f})')
+                 label=f'ROC Curve of {class_names[i]} (area = {roc_auc[i]:.2f})')
         
     plt.xlabel('False Positive Rate')
     plt.ylabel('True Positive Rate')
